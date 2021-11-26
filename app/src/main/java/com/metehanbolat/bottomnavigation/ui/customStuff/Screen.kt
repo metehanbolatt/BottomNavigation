@@ -2,7 +2,9 @@ package com.metehanbolat.bottomnavigation.ui.customStuff
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.Search
+import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class Screen(
@@ -12,8 +14,8 @@ sealed class Screen(
 ){
     object Home : Screen("home","Home",Icons.Outlined.Home)
     object Search : Screen("search","Search",Icons.Outlined.Search)
-    object Profile : Screen("profile","Profile",Icons.Outlined.Home)
-    object Settings : Screen("settings","Settings",Icons.Outlined.Home)
+    object Profile : Screen("profile","Profile",Icons.Outlined.Person)
+    object Settings : Screen("settings","Settings",Icons.Outlined.Settings)
 
     object Items{
         val list = listOf(

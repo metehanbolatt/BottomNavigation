@@ -14,4 +14,10 @@ sealed class Screen(
     object Search : Screen("search","Search",Icons.Outlined.Search)
     object Profile : Screen("profile","Profile",Icons.Outlined.Home)
     object Settings : Screen("settings","Settings",Icons.Outlined.Home)
+
+    object Items{
+        val list = listOf(
+            Home, Search, Profile, Settings
+        )
+    }
 }
